@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./image.ico">
+    <title>Responsive Design</title>
+</head>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    .header {
+        height: 10vh;
+        background-color: black;
+    }
+
+    .listItems {
+        display: flex;
+        list-style: none;
+    }
+
+    .listItem {
+        margin: 20px;
+        font-weight: bold;
+        padding-top: 5px;
+        font-size: large;
+        color: white;
+    }
+
+    .container {
+        display: flex;
+    }
+
+    .leftnavlist {
+        border: 1px solid black;
+        height: 80vh;
+        width: 25vw;
+        display: flex;
+    }
+
+    .navItems {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 20px;
+    }
+
+    .navItem:hover {
+        background-color: black;
+        color: white;
+    }
+
+    .navItem {
+        border: 1px solid black;
+        width: 20vw;
+        text-align: center;
+        margin-top: 30px;
+        padding: 10px;
+        border-radius: 20px;
+        cursor: pointer;
+    }
+
+    .contant {
+        border: 1px solid black;
+        height: 80vh;
+        width: 75vw;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    .contant>img {
+        width: 100%;
+        height: auto;
+        max-height: 60vh;
+        margin-top: 20px;
+        border-radius: 10px;
+        display: block;
+    }
+
+    .footer {
+        border: 1px solid black;
+        height: 10vh;
+        text-align: center;
+        background-color: black;
+        color: white;
+    }
+
+    @media (max-width : 600px) {
+        .header {
+            height: 15vh;
+        }
+
+        .listItems {
+            flex-wrap: wrap;
+        }
+
+        .container {
+            flex-direction: column;
+        }
+
+        .leftnavlist {
+            width: 100vw;
+            height: fit-content;
+        }
+
+        .navItem {
+            width: 90vw;
+            margin-top: 10px;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .contant {
+            width: 100vw;
+            height: fit-content;
+        }
+    }
+</style>
+
+<body>
+    <div class="header">
+        <ul class="listItems">
+            <li class="listItem">Home</li>
+            <li class="listItem"><a href="../Tags2/portfolio.html"></a>About</li>
+            <li class="listItem">Media</li>
+            <li class="listItem">Contact</li>
+            <li class="listItem">Login</li>
+            <li class="listItem">Service</li>
+        </ul>
+    </div>
+    <div class="container">
+
+        <div class="leftnavlist">
+            <ul class="navItems">
+                <li class="navItem">HTML</li>
+                <li class="navItem">CSS</li>
+                <li class="navItem">Java Script</li>
+                <li class="navItem">React JS</li>
+                <li class="navItem">MongoDB</li>
+                <li class="navItem">SQL</li>
+                <li class="navItem">Node JS</li>
+                <li class="navItem">Express JS</li>
+            </ul>
+
+        </div>
+        <div class="contant">
+            <p><b>Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet r Lorem ipsum dolor,
+
+                    sit amet consectetur adipisicing elit. Ex labore obcaecati, cum quasi at per
+                    ferendis odit rerum, veritatis dolorum quia enim Lorem ipsum, dolor sit amet
+                    consectetur adipisicing elit. Veritatis laboriosam quaerat blanditiis exercitationem
+                    fuga aliquid quo quam ducimus animi, consectetur inventore, sequi, dolorum consequuntur
+                    eaque? Quidem rerum voluptatum recusandae dolorem suscipit fuga quos, accusantium laboriosam
+                    harum hic perferendis officiis dolore asperiores explicabo totam sequi neque magnam alias
+                    voluptatem illum! Saepe quo voluptas inventore rem commodi et id officia earum ex tempore
+            </p></b>
+
+
+            <img src="./image.png" alt="Anime Picture">
+        </div>
+    </div>
+    <div class="footer">
+        <p>© 2024 Mohit Joshi. All rights reserved.</p>
+    </div>
+</body>
+
+</html>

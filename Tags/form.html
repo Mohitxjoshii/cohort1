@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="shortcut icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSttM-vKXa14AOFHjrBAIavVyewMmZoaeTulA&s" type="image/x-icon"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        form {
+            background: white;
+            padding: 50px;
+            border-radius: 15px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+            width: 100%;
+            max-width: 500px;
+        }
+
+        form::before {
+            content: 'Sign Up';
+            display: block;
+            text-align: center;
+            font-size: 32px;
+            font-weight: bold;
+            color: #667eea;
+            margin-bottom: 30px;
+        }
+
+        label {
+            font-weight: 600; /* */
+            display: block;
+            margin-bottom: 8px;
+            color: #333;
+            font-size: 14px;
+        }
+
+        input, button, select, textarea {
+            margin: 0 0 20px 0; /*box ke bahar ka size badhane ke liye  */
+            padding: 12px 15px; /*box ke ander ka size badhane ke liye  */
+            width: 100%; /* vw = viewport width*/
+            border: 1px solid #e0e0e0;
+            border-radius: 8px; /* corners curve karne ke liye */
+            font-size: 14px;
+            font-family: inherit;
+            transition: all 0.3s ease;
+        }
+
+        input:focus, select:focus, textarea:focus {
+            outline: none;
+            border-color: #667eea;
+            box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+        }
+
+        textarea {
+            resize: vertical;
+            min-height: 80px;
+        }
+
+        button {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            font-weight: 700; /* */
+            border: none;
+            cursor: pointer;
+            padding: 14px;
+            font-size: 16px;
+            margin-top: 10px;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 20px rgba(102, 126, 234, 0.4);
+        }
+
+        button:active {
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+    
+    <form action="">
+
+        <label for="user">Name : </label>
+        <input type="text" placeholder="Enter Your Name" id="user">
+        <i class="fa-solid fa-cart-arrow-down"></i>
+        <br>
+        <label for="email">Email : </label>
+        <input type="email" id="email" placeholder="Enter Your Email"> 
+        <br>
+         <label for="password">Password : </label>
+        <input type="password" id="password" placeholder="Create Your Password">
+        <br>
+        <label for="phone">Phone</label>
+        <input type="tel" id="phone" placeholder="Enter Your Phone No.">
+        <br>
+        <label for="age">Age</label>
+        <input type="number" id="age" placeholder="Enter Your Age">
+        <br>
+        <label for="course">Course : </label>
+        <select id="course">
+            <option value="Select Course" >Select Course</option>
+            <option value="BBA">BBA</option>
+            <option value="BCA">BCA</option>
+            <option value="B.TECH">B.TECH</option>
+            <option value="CS">CS</option>
+        </select>
+        <br>
+        <label for="address">Address</label>
+        <textarea id="address" cols="20" rows="2" placeholder="Enter Your Address"></textarea>
+        <br> 
+        <label for="file">File</label>
+        <input type="file"  id="file" accept=".pdf, .docx , .jpg , .png , .jpeg">
+        <!-- <br>
+        <label for="">Save Password</label> 
+        <input type="checkbox">  -->
+        <br>
+        <button>Submit</button>
+        <!-- <input type="radio" name="y">male
+        <input type="radio" name="y">female 
+        <input type="file"> 
+        
+        <textarea name="" id="" cols="30" rows="10"></textarea>
+        <input type="range"> 
+        <input type="date">
+        <input type="number">
+        <button>click</button> -->
+
+    </form>
+</body>
+</html>

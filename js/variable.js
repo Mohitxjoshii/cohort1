@@ -1,0 +1,13 @@
+console.log("hello");
+var a=5;
+console.log("value of a : ",a);
+var a=7;
+console.log("value of a : ",a);
+let b=4;
+console.log("Value of b : ",b);
+ b=6;
+console.log("Value of b : ",b);
+const c=1;
+console.log("value of c : ",c);
+// const c=3;
+console.log("Value of c : ",c);

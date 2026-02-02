@@ -1,0 +1,16 @@
+let a=3;
+console.log("type of a ",typeof a);
+let b=null;
+console.log("type of b ",typeof b);
+let c=true;
+console.log("type of c ",typeof c);
+let d=BigInt(2323231313);
+console.log("type of d ",typeof d);
+let e="mohit joshi";
+console.log("type of e ",typeof e);
+let f=Symbol("hye");
+console.log("type of f ",typeof f);
+let g;
+console.log("type of g ",typeof g);
+let h=5n;
+console.log("type of h ",typeof h);
