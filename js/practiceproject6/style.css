@@ -27,4 +27,8 @@ button{
     border: none;
     border-radius: 40px;
     font-size: 35px;
+    cursor: pointer;
+}
+button:active{
+    scale: 0.95;
 }
